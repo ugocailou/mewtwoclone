@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAGA TRITON — Système de Clonage Génétique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCANLINES OVERLAY -->
+  <div class="scanlines"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="rocket-logo">R</div>
+      <div class="header-titles">
+        <div class="header-eyebrow">TEAM ROCKET — DIVISION SCIENTIFIQUE</div>
+        <h1 class="header-title">HAGA TRITON</h1>
+        <div class="header-sub">SYSTÈME DE CLONAGE GÉNÉTIQUE v4.7.2</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="dna-animation" id="dna"></div>
+      <div class="system-status">
+        <div class="status-item"><span class="dot green"></span>SYSTÈME ACTIF</div>
+        <div class="status-item"><span class="dot green"></span>CUVE OPÉRATIONNELLE</div>
+        <div class="status-item"><span class="dot yellow"></span>SURVEILLANCE ACTIVE</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>PROJET HAGA TRITON — NIVEAU D'ACCÈS : DIRECTEUR &nbsp;///&nbsp; SUJET PRINCIPAL : MEWTWO — CLONE DE MEW &nbsp;///&nbsp; STATUT : SORTI DE CUVE &nbsp;///&nbsp; ARMURE : INSTALLÉE &nbsp;///&nbsp; ALERTE : NIVEAU ROUGE DÉTECTÉ &nbsp;///&nbsp; PROCHAINE SYNCHRONISATION ADN : 00:14:32 &nbsp;///&nbsp;</span>
+      <span>PROJET HAGA TRITON — NIVEAU D'ACCÈS : DIRECTEUR &nbsp;///&nbsp; SUJET PRINCIPAL : MEWTWO — CLONE DE MEW &nbsp;///&nbsp; STATUT : SORTI DE CUVE &nbsp;///&nbsp; ARMURE : INSTALLÉE &nbsp;///&nbsp; ALERTE : NIVEAU ROUGE DÉTECTÉ &nbsp;///&nbsp; PROCHAINE SYNCHRONISATION ADN : 00:14:32 &nbsp;///&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- LEFT PANEL: MEWTWO SUBJECT FILE -->
+    <section class="panel panel-left">
+      <div class="panel-header">
+        <span class="panel-tag">SUJET ALPHA</span>
+        <span class="panel-label">DOSSIER PRINCIPAL</span>
+      </div>
+
+      <div class="mewtwo-card">
+        <div class="mewtwo-visual">
+          <div class="mewtwo-silhouette">
+            <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+              <!-- Corps Mewtwo stylisé -->
+              <ellipse cx="60" cy="110" rx="22" ry="30" fill="#1a0a2e" stroke="#8B1A1A" stroke-width="1.5"/>
+              <ellipse cx="60" cy="60" rx="26" ry="28" fill="#1a0a2e" stroke="#8B1A1A" stroke-width="1.5"/>
+              <!-- Tête -->
+              <ellipse cx="60" cy="38" rx="20" ry="22" fill="#1a0a2e" stroke="#C44" stroke-width="1.5"/>
+              <!-- Yeux -->
+              <ellipse cx="52" cy="34" rx="5" ry="6" fill="#8B1A1A"/>
+              <ellipse cx="68" cy="34" rx="5" ry="6" fill="#8B1A1A"/>
+              <ellipse cx="52" cy="34" rx="2" ry="3" fill="#FF3333"/>
+              <ellipse cx="68" cy="34" rx="2" ry="3" fill="#FF3333"/>
+              <!-- Queue -->
+              <path d="M82 110 Q110 95 105 75 Q100 60 88 65" fill="none" stroke="#8B1A1A" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="88" cy="65" r="5" fill="#8B1A1A"/>
+              <!-- Bras -->
+              <path d="M38 85 Q20 95 22 115" fill="none" stroke="#8B1A1A" stroke-width="3" stroke-linecap="round"/>
+              <path d="M82 85 Q100 95 98 115" fill="none" stroke="#8B1A1A" stroke-width="3" stroke-linecap="round"/>
+              <!-- Jambes -->
+              <path d="M48 138 Q42 155 38 158" fill="none" stroke="#8B1A1A" stroke-width="3" stroke-linecap="round"/>
+              <path d="M72 138 Q78 155 82 158" fill="none" stroke="#8B1A1A" stroke-width="3" stroke-linecap="round"/>
+              <!-- Armure détails -->
+              <rect x="44" y="78" width="32" height="20" rx="4" fill="none" stroke="#4444AA" stroke-width="1" stroke-dasharray="3,2"/>
+              <rect x="50" y="52" width="20" height="12" rx="3" fill="none" stroke="#4444AA" stroke-width="1" stroke-dasharray="3,2"/>
+              <!-- Glow effet -->
+              <ellipse cx="60" cy="38" rx="22" ry="24" fill="none" stroke="#8B1A1A" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="scan-line-anim"></div>
+        </div>
+        <div class="mewtwo-data">
+          <div class="data-row"><span class="data-key">ID SUJET</span><span class="data-val">MWTO-001-α</span></div>
+          <div class="data-row"><span class="data-key">ORIGINE</span><span class="data-val">CLONE — MEW</span></div>
+          <div class="data-row"><span class="data-key">TYPE</span><span class="data-val">PSY</span></div>
+          <div class="data-row"><span class="data-key">STATUT</span><span class="data-val blink-red">SORTI DE CUVE</span></div>
+          <div class="data-row"><span class="data-key">ARMURE</span><span class="data-val">INSTALLÉE</span></div>
+          <div class="data-row"><span class="data-key">NIVEAU PSY</span><span class="data-val">∞ — NON MESURABLE</span></div>
+          <div class="data-row"><span class="data-key">CRÉATEUR</span><span class="data-val">PROJET HAGA TRITON</span></div>
+          <div class="data-row"><span class="data-key">ÉMOTION</span><span class="data-val">NULLE À L'ORIGINE</span></div>
+        </div>
+      </div>
+
+      <!-- DNA BAR -->
+      <div class="dna-bar-section">
+        <div class="dna-bar-label">SÉQUENCE ADN — INTÉGRITÉ</div>
+        <div class="dna-bar-track"><div class="dna-bar-fill" style="width:97%"></div></div>
+        <div class="dna-bar-pct">97.3%</div>
+      </div>
+      <div class="dna-bar-section">
+        <div class="dna-bar-label">STABILITÉ PSYCHIQUE</div>
+        <div class="dna-bar-track"><div class="dna-bar-fill danger" style="width:23%"></div></div>
+        <div class="dna-bar-pct danger">23.1% — CRITIQUE</div>
+      </div>
+      <div class="dna-bar-section">
+        <div class="dna-bar-label">PUISSANCE TÉLÉKINÉSIQUE</div>
+        <div class="dna-bar-track"><div class="dna-bar-fill" style="width:100%"></div></div>
+        <div class="dna-bar-pct">ILLIMITÉE</div>
+      </div>
+    </section>
+
+    <!-- CENTER PANEL: CLONES -->
+    <section class="panel panel-center">
+      <div class="panel-header">
+        <span class="panel-tag">CLONES PRODUITS</span>
+        <span class="panel-label">REGISTRE DE CLONAGE — MEWTWO</span>
+      </div>
+
+      <div class="clone-count">
+        <span class="count-num">7</span>
+        <span class="count-label">CLONES ACTIFS</span>
+      </div>
+
+      <div class="clones-grid" id="clones-grid">
+        <!-- populated by JS -->
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL: MACHINE & LOGS -->
+    <section class="panel panel-right">
+      <div class="panel-header">
+        <span class="panel-tag">SYSTÈME</span>
+        <span class="panel-label">MACHINE DE CLONAGE</span>
+      </div>
+
+      <!-- Machine visual -->
+      <div class="machine-visual">
+        <svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" class="machine-svg">
+          <!-- Cuve principale -->
+          <rect x="60" y="30" width="80" height="110" rx="8" fill="#0D0D1A" stroke="#2A2A6A" stroke-width="2"/>
+          <!-- Liquide dans cuve -->
+          <rect x="64" y="60" width="72" height="76" rx="4" fill="#0A0A3A" opacity="0.8"/>
+          <!-- Bulles -->
+          <circle cx="80" cy="110" r="3" fill="none" stroke="#1A1AFF" stroke-width="1" opacity="0.6" class="bubble b1"/>
+          <circle cx="100" cy="95" r="2" fill="none" stroke="#1A1AFF" stroke-width="1" opacity="0.5" class="bubble b2"/>
+          <circle cx="120" cy="105" r="4" fill="none" stroke="#1A1AFF" stroke-width="1" opacity="0.4" class="bubble b3"/>
+          <!-- Tuyaux gauche -->
+          <path d="M60 50 Q30 50 30 80 L30 140 Q30 160 50 160 L80 160" fill="none" stroke="#2A2A6A" stroke-width="4"/>
+          <path d="M60 80 Q40 80 40 100 L40 140" fill="none" stroke="#2A2A6A" stroke-width="3"/>
+          <!-- Tuyaux droite -->
+          <path d="M140 50 Q170 50 170 80 L170 140 Q170 160 150 160 L120 160" fill="none" stroke="#2A2A6A" stroke-width="4"/>
+          <path d="M140 80 Q160 80 160 100 L160 140" fill="none" stroke="#2A2A6A" stroke-width="3"/>
+          <!-- Panneau de contrôle bas -->
+          <rect x="50" y="148" width="100" height="25" rx="4" fill="#0D0D1A" stroke="#2A2A6A" stroke-width="1.5"/>
+          <circle cx="70" cy="160" r="6" fill="#8B1A1A" class="btn-pulse"/>
+          <circle cx="90" cy="160" r="6" fill="#1A1A8B"/>
+          <circle cx="110" cy="160" r="6" fill="#1A8B1A"/>
+          <rect x="120" cy="155" width="20" height="10" rx="2" fill="#0A0A2A" stroke="#2A2A6A" stroke-width="1" x="120" y="155"/>
+          <!-- Indicateur haut -->
+          <rect x="75" y="15" width="50" height="12" rx="3" fill="#0D0D1A" stroke="#2A2A6A" stroke-width="1.5"/>
+          <rect x="78" y="18" width="14" height="6" rx="1" fill="#8B1A1A" class="indicator-blink"/>
+          <rect x="95" y="18" width="14" height="6" rx="1" fill="#1A8B1A"/>
+          <rect x="112" y="18" width="8" height="6" rx="1" fill="#2A2A6A"/>
+          <!-- Fils connexion -->
+          <line x1="100" y1="5" x2="100" y2="15" stroke="#2A2A6A" stroke-width="2"/>
+          <circle cx="100" cy="5" r="3" fill="#8B1A1A" class="btn-pulse"/>
+        </svg>
+        <div class="machine-label">CUVE DE CLONAGE — HAGA TRITON MK.III</div>
+      </div>
+
+      <!-- TERMINAL LOG -->
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="term-dot red"></span>
+          <span class="term-dot yellow"></span>
+          <span class="term-dot green"></span>
+          <span class="term-title">JOURNAL DE CLONAGE</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <!-- populated by JS -->
+        </div>
+      </div>
+
+      <!-- ADD CLONE BUTTON -->
+      <button class="add-clone-btn" onclick="openModal()">
+        <span class="btn-icon">⊕</span> INITIER SÉQUENCE DE CLONAGE
+      </button>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <span>NOUVEAU CLONAGE — HAGA TRITON</span>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>NOM DU POKÉMON ORIGINAL</label>
+          <input type="text" id="input-name" placeholder="ex: Pikachu" />
+        </div>
+        <div class="form-group">
+          <label>TYPE</label>
+          <input type="text" id="input-type" placeholder="ex: Électrik" />
+        </div>
+        <div class="form-group">
+          <label>STATUT CLONE</label>
+          <select id="input-status">
+            <option value="STABLE">STABLE</option>
+            <option value="EN COURS">EN COURS</option>
+            <option value="CRITIQUE">CRITIQUE</option>
+            <option value="TERMINÉ">TERMINÉ</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>INTÉGRITÉ ADN (%)</label>
+          <input type="number" id="input-dna" min="0" max="100" placeholder="ex: 94" />
+        </div>
+        <div class="form-group">
+          <label>NOTE OPÉRATEUR</label>
+          <input type="text" id="input-note" placeholder="Observations..." />
+        </div>
+        <button class="modal-submit" onclick="addClone()">LANCER LE CLONAGE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
